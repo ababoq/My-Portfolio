@@ -88,7 +88,7 @@ const projects = [{
             { type: "image", src: "./img/portfolio/map/image2.png", title: "" },
             { type: "image", src: "./img/portfolio/map/image3.png", title: "" },
             { type: "image", src: "./img/portfolio/map/image4.png", title: "" },
-            { type: "video", src: "./img/portfolio/map/image4.png", title: "" },
+            { type: "video", src: "./img/portfolio/map/demo.mp4", title: "" },
 
 
         ],
