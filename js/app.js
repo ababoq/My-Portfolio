@@ -4,15 +4,15 @@ const projects = [{
         description: "",
         images: [
             { type: "image", src: "./img/portfolio/Bettor/iamge.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet1.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet2.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet3.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet4.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet5.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet6.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet7.png", title: "" },
-            { type: "image", src: "./img/portfolio/bettor/bet8.png", title: "" },
-            { type: "video", src: "./img/portfolio/bettor/demo.mp4", title: "" }
+            { type: "image", src: "./img/portfolio/Bettor/bet1.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet2.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet3.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet4.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet5.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet6.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet7.png", title: "" },
+            { type: "image", src: "./img/portfolio/Bettor/bet8.png", title: "" },
+            { type: "video", src: "./img/portfolio/Bettor/demo.mp4", title: "" }
 
         ],
         additionalText: "",
@@ -88,6 +88,7 @@ const projects = [{
             { type: "image", src: "./img/portfolio/map/image2.png", title: "" },
             { type: "image", src: "./img/portfolio/map/image3.png", title: "" },
             { type: "image", src: "./img/portfolio/map/image4.png", title: "" },
+            { type: "video", src: "./img/portfolio/map/image4.png", title: "" },
 
 
         ],
