@@ -1,6 +1,6 @@
 .home {
     min-height: 100vh;
-    background-image: url("../img/hero.png");
+    background-image: url("../img/herop.png");
     background-size: cover;
     background-position: center;
     padding: 15px;
@@ -8,6 +8,48 @@
 
 .full-screen {
     min-height: 100vh;
+}
+
+.additional-image {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    z-index: 2;
+    animation: moveInCircle 10s linear infinite;
+}
+
+.rotating-image {
+    width: 27vw;
+    /* Adjust this value as needed */
+    height: auto;
+    animation: rotateImage 100s linear infinite;
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes moveInCircle {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .home-content {
@@ -22,27 +64,35 @@
     flex: 0 0 75%;
     max-width: 75%;
     color: rgb(236, 241, 250);
-    padding-left: 35px;
+    padding-left: 25px;
+    /* Decreased the padding to move content to the left */
     border-left: 3px solid rgb(236, 241, 250);
-    margin-top: 50px;
+    margin-top: -200px;
+    /* Decreased the margin to move content up */
+    margin-left: -100px;
+}
+
+.highlight {
+    color: #CD86C9;
+    /* Change to any color you want */
 }
 
 .block h1 {
-    font-size: 70px;
+    font-size: 72px;
     font-weight: 600;
     margin: 0;
     padding: 0;
 }
 
 .block h3 {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 500;
     margin: 0;
     padding: 0;
 }
 
 .block h6 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -69,4 +119,24 @@
 .cv-btn a:hover {
     background-color: #fff;
     color: #000;
+}
+
+@keyframes floatEffect {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.block {
+    /* ... existing styles ... */
+    animation: floatEffect 5s infinite;
+    /* 5 seconds duration, infinite loop */
+    transition: all 0.3s ease-in-out;
+    /* smooth transition for all changes */
 }
