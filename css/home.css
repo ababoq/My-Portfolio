@@ -29,6 +29,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -38,15 +39,19 @@
     0% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-50px);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(50px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -125,9 +130,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -135,7 +142,6 @@
 
 .block {
     /* ... existing styles ... */
-    animation: floatEffect 5s infinite;
     /* 5 seconds duration, infinite loop */
     transition: all 0.3s ease-in-out;
     /* smooth transition for all changes */

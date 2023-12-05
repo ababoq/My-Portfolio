@@ -104,6 +104,7 @@
         transform: translate(-20px);
         opacity: 0;
     }
+
     100% {
         transform: translate(0);
         opacity: 1;
@@ -127,6 +128,7 @@
         transform: translate(20px);
         opacity: 0;
     }
+
     100% {
         transform: translate(0);
         opacity: 1;
