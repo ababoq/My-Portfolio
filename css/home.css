@@ -141,10 +141,7 @@
 }
 
 .block {
-    /* ... existing styles ... */
-    /* 5 seconds duration, infinite loop */
     transition: all 0.3s ease-in-out;
-    /* smooth transition for all changes */
 }
 
 .cv-btn {

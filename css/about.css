@@ -1,71 +1,111 @@
+/* Base styling for the .about section */
 .about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: center; /* Center content horizontally */
   padding: 100px 15px;
-  background-color: #fff;
+  background-color: #f9f9f9; /* Slightly off-white for a softer look */
+  gap: 20px; 
 }
 
-.img {
-  flex: 0 0 50%;
-  max-width: 50%;
+/* Enhanced image section with subtle entrance animation */
+.about .img {
+  flex: 1; /* Flex grow to use available space */
+  max-width: 45%; /* Adjust max-width for balance */
+  opacity: 0;
+  transform: scale(0.95); /* Start slightly smaller */
+  animation: fadeInAndScale 3s ease forwards; /* New animation for scale and fade-in */
 }
 
+@keyframes fadeInAndScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styling for images within .img with transition applied for smooth in and out */
 .img img {
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px; /* More pronounced rounded corners */
   display: block;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Add shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Transition applied here for smooth effect on mouse out */
 }
 
-.text {
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding-left: 30px;
+/* Hover effect specifically for images within .img */
+.img img:hover {
+  transform: scale(1.1); /* Slightly increase size */
+  cursor: pointer; /* Change cursor to indicate interactiveness */
 }
+
+/* Styling for the .text section with transition for smooth effect */
+.text {
+  flex: 1; /* Flex grow to use available space */
+  max-width: 48%; /* Adjust max-width for balance */
+  padding: 40px; /* Increased padding for a spacious feel */
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden; /* Hide overflow for clean animation boundaries */
+  transition: transform 0.3s ease-in-out; /* Ensure smooth transition on scaling */
+  cursor: pointer;
+}
+
+/* Hover effect for the .text section */
+.text:hover {
+  transform: scale(1.2); /* Increase size slightly */
+}
+
 
 .text h4 {
-  font-size: 25px;
-  font-weight: 600;
-  margin: 0 0 10px;
-  color: #000;
+  font-size: 21px; /* Larger heading for emphasis */
+  font-weight: 800; /* Slightly bolder for contrast */
+  margin-bottom: 20px; /* Increased margin for separation */
+  color: #000; /* Darker color for contrast */
 }
 
-.text h6 {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 25px;
-  color: #000;
+
+/* Heading and paragraph styling optimizations */
+.text h4, .text p {
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUpAndFade 1.5s ease-out forwards;
+  animation-delay: 0.3s; /* Delay animation for a staggered effect */
 }
 
-.text h6 span {
-  color: #5f88e0;
-  position: relative;
+@keyframes slideUpAndFade {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.text h6 span::before {
-  content: "";
-  left: 0;
-  right: 90%;
-  position: absolute;
-  height: 2px;
-  bottom: 0px;
-  transition: all 0.5s ease;
+/* First paragraph gets a slightly different delay to enhance the staggered effect */
+.text p:first-of-type {
+  animation-delay: 0.6s;
 }
 
-.text h6 span:hover::before {
-  content: "";
-  left: 0;
-  right: 0;
-  position: absolute;
-  height: 2px;
-  background-color: #5f88e0;
-  bottom: 0px;
+.mark {
+  background-color: #5f88e0; /* Attractive highlight color */
+  color: #ffffff; /* Contrast for readability */
+  padding: 0 5px; /* Slight padding for emphasis */
+  border-radius: 3px; /* Modern, rounded highlight */
 }
 
-.text p {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #838383;
+/* Enhancements for interactive elements */
+.text a:hover, .mark:hover {
+  background-color: #4477c2; /* Darker on hover for interactivity */
+  color: #ffffff;
 }
-
+.text h4 {
 .skills {
   padding: 20px 0px;
 }
