@@ -202,9 +202,6 @@ a.forEach(function (element) {
     })
 })
 
-
-//Hamburger
-
 const hamBurger = document.querySelector(".hamburger");
 
 hamBurger.addEventListener("click", function () {
