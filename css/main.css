@@ -427,3 +427,80 @@ a {
         text-align: left; /* Align text to left on larger screens for better readability */
     }
 }
+
+.project-details {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+.title h1 {
+    margin-bottom: 40px;
+    color: #333;
+}
+/* Base styles for the projects section adjusted for vertical listing */
+.projects {
+    display: flex;
+    flex-direction: column; /* Changed from grid to flex for vertical layout */
+    gap: 35px; /* Maintain gap for separation */
+    padding: 40px; /* Padding around the section */
+    margin-top: 20px; /* Separation from the title */
+}
+
+.project-card {
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h2 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px; /* Adjust for consistent spacing without flex-grow */
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technologies span {
+    background-color: #e8e8e8;
+    color: #333;
+    border-radius: 16px;
+    padding: 8px 12px;
+    font-size: 14px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+/* Since we're now using flex for the main layout, media query adjustments for .projects might be simplified or unnecessary */
+
+/* Adjust title size for better hierarchy, applicable for all screen sizes now */
+.project-details .title h1 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Enhanced container for better alignment and padding, suitable for the vertical layout */
+.project-details .container {
+    max-width: 800px; /* Adjusted for a narrower, focused reading experience */
+    margin: auto; /* Center alignment */
+    padding: 0 20px; /* Adjust padding for edge spacing, considering narrower layout */
+}
+
+
