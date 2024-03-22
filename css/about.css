@@ -166,3 +166,30 @@
 .social a .fa:hover {
   color: #000;
 }
+.text {
+  position: relative; /* Ce style existait déjà, important pour le positionnement absolu du bouton */
+  /* Le reste de votre style .text */
+}
+
+.cv-download-btn-container {
+  position: absolute;
+  top: -20px; /* Ajustez selon le besoin pour positionner au-dessus */
+  right: 20px; /* Position à droite dans la division .text */
+  z-index: 10; /* S'assure que le bouton flotte au-dessus du contenu */
+}
+
+.cv-download-btn {
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Pas de soulignement */
+  padding: 10px 20px; /* Ajustez le padding intérieur */
+  border-radius: 20px; /* Bordures arrondies pour un look moderne */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Ombre pour l'effet flottant */
+  font-weight: bold; /* Texte en gras */
+  transition: 0.3s; /* Transition douce pour les interactions */
+}
+
+.cv-download-btn:hover {
+  background-color: #0056b3; /* Couleur au survol */
+  transform: translateY(-2px); /* Petit effet de soulèvement au survol */
+}
